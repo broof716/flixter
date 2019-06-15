@@ -4,11 +4,12 @@
   <h1 class="text-center">Learn something today</h1>
   
   <hr />
-
+  <% puts "BELOW ARE THE COURSES YOURE GETTING BACK =================================" %>
+  <% puts @courses[0].title %>
   <% @courses.each do |course| %>
-  <<h2 class="text-center">
+    <<h2 class="text-center">
       <%= link_to course.title, course_path(course) %>
-      
+      <%# image_tag course.image, class: 'img-fluid' #%>  
     </h2>
   <br />
   <div class="row">
