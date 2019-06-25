@@ -39,3 +39,9 @@
     <% end %>
   </div>
 </div>
+<div class="row">
+  <% current.course.images.each do |image| %>
+    <div class="col-12 col-sm-6">
+    <%= image_tag course.image.url %>
+  <% end %>
+</div>
