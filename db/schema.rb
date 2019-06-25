@@ -26,11 +26,6 @@ ActiveRecord::Schema.define(version: 2019_06_24_202117) do
     t.index ["user_id"], name: "index_courses_on_user_id"
   end
 
-  create_table "images", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "lessons", id: :serial, force: :cascade do |t|
     t.string "title"
     t.string "subtitle"
