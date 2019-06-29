@@ -1,6 +1,6 @@
 class AddingTrackableColumns < ActiveRecord::Migration[5.2]
   def change
-    change_table :users do |t|
+    add_column :courses, :image, :string
     # Trackable
       t.integer  :sign_in_count, default: 0, null: false
       t.datetime :current_sign_in_at
