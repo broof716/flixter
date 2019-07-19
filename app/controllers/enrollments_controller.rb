@@ -1,3 +1,4 @@
+    
 class EnrollmentsController < ApplicationController
   before_action :authenticate_user!
 
@@ -12,23 +13,24 @@ class EnrollmentsController < ApplicationController
       )
 
       charge = Stripe::Charge.create(
-        customer: customer.id,
-        amount: @amount,
-        description: 'Flixter Premo Content',
-        currency: 'usd'
+        customer:    customer.id,
+        amount:      @amount,
+        description: 'Flixter Premium Content',
+        currency:    'usd'
       )
     end
 
   current_user.enrollments.create(course: current_course)
-  redirect_to course_path(current_course)
+  redirect_to course_url(current_course)
   rescue Stripe::CardError => e
     flash[:error] = e.message
-    redirect_to root_path
+    redirect_to root_url
   end
+
 
   private
 
   def current_course
-    @current_course ||= Course.find(params[:course_id])
+    @current_course  ||= Course.find(params[:course_id])
   end
 end
