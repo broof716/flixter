@@ -6,13 +6,15 @@ Check out the live Flixter application [here](https://flixter-bryan-roof.herokua
 
 ### Features:
 
-* Instructors have restricted admin access to allow creation of course content utilizing potos, video, and text.
+* Instructors have restricted admin access to allow creation of course content utilizing photos, videos, and text.
 
-* Stripe is incorporated to securely process payments from students.
+* Stripe API is incorporated to securely process payments from students.
 
 * jQuery is used to allow dynamic reordering of course materials by instructors.
 
 * Devise is used for user authentication and sign-in forms.
+
+* Carrierwave is used for aws. 
 
 * Image and video storage and delivery utilizes Amazon's S3 Web Services.
 
