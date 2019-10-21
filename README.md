@@ -1,27 +1,19 @@
 # Flixter
 
-A content creation and delivery application built using Ruby on Rails, Javascript, and jQuery.
+This application is built by using Ruby on Rails, Javascript, and jQuery.
 
-Check out the live Flixter application [here](https://flixter-bryan-roof.herokuapp.com) and create and account to sign up for a course and/or to create a course.
+Here is a live feed of the website. [here](https://flixter-bryan-roof.herokuapp.com) If you would like to create a account and try, go right ahead. 
 
 ### Features:
 
-* Instructors have restricted admin access to allow creation of course content utilizing photos, videos, and text.
+* Contains a Stripe API which is a secure payment method
 
-* Stripe API is incorporated to securely process payments from students.
+* Devise is used for user authentication and sign-in forms, could be used for email as well.
 
-* jQuery is used to allow dynamic reordering of course materials by instructors.
+* Carrierwave is used for aws.
 
-* Devise is used for user authentication and sign-in forms.
+* Bootstrap is also used in this application
 
-* Carrierwave is used for aws. 
-
-* Image and video storage and delivery utilizes Amazon's S3 Web Services.
-
-* A user dashboard shows all courses that a user is enrolled in and if the user is also an instructor it shows all of the courses they are teaching.
-
-* Twitter Bootstrap is used for front-end styling.
-
-* Postgresql provides database services.
+* Postgresql is the database that is being used in this application.
 
 ![alt tag](app/assets/images/flixter.png)
